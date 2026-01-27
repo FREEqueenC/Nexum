@@ -91,7 +91,12 @@ const Dashboard = () => {
                     <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                         <span style={{ color: 'var(--color-success)' }}>Nexum</span>
                     </h1>
-                    <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Banking on Trust, Not Fees.</p>
+                    <p style={{ color: 'var(--color-text-main)', fontSize: '1rem', fontWeight: '500', marginTop: '0.25rem' }}>
+                        Advances built on <strong>Trust</strong>, not fees.
+                    </p>
+                    <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', maxWidth: '400px', lineHeight: '1.4', marginTop: '0.25rem' }}>
+                        Direct payments for essentials—cleaning, childcare, auto repair—to keep you moving forward.
+                    </p>
                 </div>
                 <div style={{ textAlign: 'right' }}>
                     <h2 style={{ fontSize: '1.25rem', fontWeight: '500' }}>Hello, {user?.name.split(' ')[0]}</h2>
