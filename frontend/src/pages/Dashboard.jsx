@@ -86,9 +86,16 @@ const Dashboard = () => {
 
     return (
         <div className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
-            <header style={{ marginBottom: '2rem' }}>
-                <h1 className="text-gradient">Good Morning, {user?.name.split(' ')[0]}</h1>
-                <p style={{ color: 'var(--color-text-muted)' }}>Here's your community standing.</p>
+            <header style={{ marginBottom: '3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                    <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <span style={{ color: 'var(--color-success)' }}>Nexum</span>
+                    </h1>
+                    <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Banking on Trust, Not Fees.</p>
+                </div>
+                <div style={{ textAlign: 'right' }}>
+                    <h2 style={{ fontSize: '1.25rem', fontWeight: '500' }}>Hello, {user?.name.split(' ')[0]}</h2>
+                </div>
             </header>
 
             <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
