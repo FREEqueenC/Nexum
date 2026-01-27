@@ -86,20 +86,33 @@ const Dashboard = () => {
 
     return (
         <div className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
-            <header style={{ marginBottom: '3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <header style={{ marginBottom: '4rem', paddingTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div>
-                    <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        <span style={{ color: 'var(--color-success)' }}>Nexum</span>
+                    <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                        <span style={{
+                            background: 'var(--color-success)', color: '#021a12',
+                            width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            borderRadius: '12px', fontSize: '1.75rem', fontWeight: '700'
+                        }}>N</span>
+                        Nexum
                     </h1>
-                    <p style={{ color: 'var(--color-text-main)', fontSize: '1rem', fontWeight: '500', marginTop: '0.25rem' }}>
-                        Advances built on <strong>Trust</strong>, not fees.
-                    </p>
-                    <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', maxWidth: '400px', lineHeight: '1.4', marginTop: '0.25rem' }}>
-                        Direct payments for essentials—salons, childcare, auto repair—to keep you moving forward.
-                    </p>
+                    <div style={{ paddingLeft: '0.25rem' }}>
+                        <p style={{ color: 'var(--color-text-main)', fontSize: '1.1rem', fontWeight: '500', marginBottom: '0.5rem' }}>
+                            Advances built on <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', color: 'var(--color-success)' }}>Trust</span>, not fees.
+                        </p>
+                        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', maxWidth: '450px', lineHeight: '1.6' }}>
+                            Direct support for essentials—salons, childcare, auto repair—to keep you moving forward.
+                        </p>
+                    </div>
                 </div>
-                <div style={{ textAlign: 'right' }}>
-                    <h2 style={{ fontSize: '1.25rem', fontWeight: '500' }}>Hello, {user?.name.split(' ')[0]}</h2>
+                <div style={{ textAlign: 'right', paddingTop: '0.5rem' }}>
+                    <div style={{
+                        display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
+                        background: 'rgba(255,255,255,0.05)', padding: '0.5rem 1rem', borderRadius: '2rem'
+                    }}>
+                        <div style={{ width: '8px', height: '8px', background: 'var(--color-success)', borderRadius: '50%' }}></div>
+                        <span style={{ fontSize: '0.9rem', fontWeight: '500', color: 'var(--color-text-main)' }}>Hello, {user?.name.split(' ')[0]}</span>
+                    </div>
                 </div>
             </header>
 
