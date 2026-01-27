@@ -100,8 +100,13 @@ const Dashboard = () => {
 
             <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                 <h2 style={{ marginBottom: '1.5rem' }}>Community Trust Score</h2>
-                <TrustScoreRing score={parseInt(trustData?.community_trust_score || 0)} size={240} />
-                <p style={{ marginTop: '1.5rem', color: 'var(--color-primary-light)', fontWeight: '500' }}>
+                <div style={{ cursor: 'pointer' }} onClick={() => window.location.href = '/trust'}>
+                    <TrustScoreRing score={parseInt(trustData?.community_trust_score || 0)} size={240} />
+                </div>
+                <p style={{ marginTop: '1rem', marginBottom: '0.2rem', fontSize: '0.85rem' }}>
+                    <a href="/trust" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>How is this calculated?</a>
+                </p>
+                <p style={{ marginTop: '0.5rem', color: 'var(--color-primary-light)', fontWeight: '500' }}>
                     By <span style={{ textDecoration: 'underline' }}>paying efficiently</span>, you're building real stability.
                 </p>
             </div>
