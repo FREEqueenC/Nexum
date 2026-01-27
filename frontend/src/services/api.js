@@ -1,6 +1,7 @@
 // Use environment variable for API URL (Vercel) or fallback to proxy (local)
-const ENV_URL = import.meta.env.VITE_API_URL; // Read env var
-export const API_BASE = ENV_URL ? ENV_URL.replace(/\/$/, '') : '/api';
+const ENV_URL = import.meta.env.VITE_API_URL;
+// Ensure we always target the /api prefix, whether local or production
+export const API_BASE = ENV_URL ? `${ENV_URL.replace(/\/$/, '')}/api` : '/api';
 
 export const api = {
     fetchUser: async (userId) => {
