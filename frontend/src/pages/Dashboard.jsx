@@ -90,7 +90,7 @@ const Dashboard = () => {
                 <div>
                     <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
                         <span style={{
-                            background: 'var(--color-success)', color: '#021a12',
+                            background: 'var(--color-success)', color: '#040d0a',
                             width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center',
                             borderRadius: '12px', fontSize: '1.75rem', fontWeight: '700'
                         }}>N</span>
