@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import TrustScoreRing from '../components/TrustScoreRing';
 import TransactionFeed from '../components/TransactionFeed';
 import ReliabilityMeter from '../components/ReliabilityMeter';
@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import { api } from '../services/api';
 
 const Dashboard = () => {
+    const navigate = useNavigate();
     const [user, setUser] = useState(null);
     const [trustData, setTrustData] = useState(null);
     const [transactions, setTransactions] = useState([]);
@@ -100,11 +101,11 @@ const Dashboard = () => {
 
             <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                 <h2 style={{ marginBottom: '1.5rem' }}>Community Trust Score</h2>
-                <div style={{ cursor: 'pointer' }} onClick={() => window.location.href = '/trust'}>
+                <div style={{ cursor: 'pointer' }} onClick={() => navigate('/trust')}>
                     <TrustScoreRing score={parseInt(trustData?.community_trust_score || 0)} size={240} />
                 </div>
                 <p style={{ marginTop: '1rem', marginBottom: '0.2rem', fontSize: '0.85rem' }}>
-                    <a href="/trust" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>How is this calculated?</a>
+                    <Link to="/trust" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>How is this calculated?</Link>
                 </p>
                 <p style={{ marginTop: '0.5rem', color: 'var(--color-primary-light)', fontWeight: '500' }}>
                     By <span style={{ textDecoration: 'underline' }}>paying efficiently</span>, you're building real stability.
