@@ -7,12 +7,16 @@
   /* Warm Sand */
   --color-secondary-dark: #CA8A04;
 
-  /* Neutral Palette (Zinc/Grey - No Blue) */
-  --color-background: #09090b;  /* Zinc 950 */
-  --color-surface: #18181b;     /* Zinc 900 */
-  --color-surface-glass: rgba(24, 24, 27, 0.7);
-  --color-text-main: #FAFAFA;   /* Zinc 50 */
-  --color-text-muted: #A1A1AA;  /* Zinc 400 */
+  /* Deep Forest Palette (Rich Green - No Grey) */
+  --color-background: #021a12;
+  /* Very Dark Green/Black */
+  --color-surface: #062c20;
+  /* Dark Deep Emerald */
+  --color-surface-glass: rgba(6, 44, 32, 0.7);
+  --color-text-main: #f0fdf4;
+  /* Mint White */
+  --color-text-muted: #86efac;
+  /* Soft Green Text */
 
   /* Functional */
   --color-success: #10B981;
