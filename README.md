@@ -1,6 +1,6 @@
-# Nexum
+# Payviah
 
-**Nexum** is a community-based Buy Now, Pay Later (BNPL) system built on trust, grace, and stability.
+**Payviah** is a community-based Buy Now, Pay Later (BNPL) system built on trust, grace, and stability.
 
 ## Features
 
