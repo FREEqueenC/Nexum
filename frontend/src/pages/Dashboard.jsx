@@ -108,11 +108,11 @@ const Dashboard = () => {
             <Header user={user} />
 
             <div style={{ marginBottom: '3rem', marginTop: '1rem' }}>
-                <p style={{ color: 'var(--color-text-main)', fontSize: '1.1rem', fontWeight: '500', marginBottom: '0.5rem' }}>
-                    Advances built on <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', color: 'var(--color-success)' }}>Trust</span>, not fees.
+                <p style={{ color: 'var(--color-text-main)', fontSize: '1.25rem', fontWeight: '500', marginBottom: '1rem', lineHeight: '1.4' }}>
+                    Payviah is <span style={{ color: 'var(--color-success)' }}>community-rooted stability infrastructure</span>.
                 </p>
-                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', maxWidth: '450px', lineHeight: '1.6' }}>
-                    Direct support for essentials—salons, childcare, auto repair—to keep you moving forward.
+                <p style={{ color: 'var(--color-text-muted)', fontSize: '1rem', maxWidth: '600px', lineHeight: '1.6' }}>
+                    We provide instant micro-installments for the essentials that keep you working—like car repairs, childcare, and professional grooming—using a behavioral <strong>'Trust Score'</strong> instead of a credit score.
                 </p>
             </div>
 
