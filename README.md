@@ -69,7 +69,10 @@ The frontend will run on `http://localhost:5173` with simulated data.
 1. Set up your environment variables:
 ```bash
 # Create a .env file in the root directory
-echo "DATABASE_URL=your_postgresql_connection_string" > .env
+# Add your database connection string
+cat > .env << EOF
+DATABASE_URL=your_postgresql_connection_string
+EOF
 ```
 
 2. Build the frontend:
@@ -102,7 +105,9 @@ psql -U your_username -d your_database -f seed_data.sql
 ### Project Structure
 - `/src` - Backend Node.js API
 - `/frontend` - React frontend application
-- `schema.sql` - Database schema
+- `schema.sql` - Database schema (root directory)
+- `seed_data.sql` - Sample data for database (root directory)
+- `trust_engine.sql` - Trust score calculation logic (root directory)
 - `DEPLOYMENT.md` - Production deployment guide
 
 ## Note
